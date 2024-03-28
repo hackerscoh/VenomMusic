@@ -53,11 +53,11 @@ class Userbot(Client):
         LOGGER(__name__).info(f"Gettings Assistants Info...")
         if config.STRING1:
             await self.one.start()
-            try:
-                await self.one.join_chat("VenomOwners")
-                await self.one.join_chat("Venom_Chatz")
-            except:
-                pass
+            # try:
+            #     await self.one.join_chat("VenomOwners")
+            #     await self.one.join_chat("Venom_Chatz")
+            # except:
+            #     pass
             assistants.append(1)
             get_me = await self.one.get_me()
             self.one.username = get_me.username
