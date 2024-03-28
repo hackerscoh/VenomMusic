@@ -32,22 +32,23 @@ OWNER_ID = int(getenv("OWNER_ID", "5822700831"))
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+UPSTREAM_REPO='https://github.com/'
+# UPSTREAM_REPO = getenv(
+#     "UPSTREAM_REPO",
+#     "https://github.com/venombolteop/VenomMusic",
+# )
+UPSTREAM_BRANCH = 'main'#getenv("UPSTREAM_BRANCH", "main")
+GIT_TOKEN = 'None'
+# getenv(
+#     "GIT_TOKEN", None
+# )  # Fill this variable if your upstream repository is private
 
-UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO",
-    "https://github.com/venombolteop/VenomMusic",
-)
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
-
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VenomOwners")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Venom_Chatz")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/sleeeping_guy")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/sleeeping_guy")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", "false"))
-AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", "false")
+AUTO_LEAVING_ASSISTANT = False#bool(getenv("AUTO_LEAVING_ASSISTANT", "false"))
+AUTO_SUGGESTION_MODE = False#getenv("AUTO_SUGGESTION_MODE", "false")
 AUTO_SUGGESTION_TIME = int(
     getenv("AUTO_SUGGESTION_TIME", "5400"))
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -86,21 +87,21 @@ clean = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
+    "START_IMG_URL", "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
+    "PING_IMG_URL", "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg"
+PLAYLIST_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+STATS_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+TELEGRAM_AUDIO_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+TELEGRAM_VIDEO_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+STREAM_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+SOUNCLOUD_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+YOUTUBE_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://i.ibb.co/4FM6tyQ/imgtg.jpg"
 
 
 def time_to_seconds(time):
